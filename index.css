@@ -1,0 +1,10 @@
+.hero {
+    font-family: "Momo Trust Display", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: aqua;
+    padding: 50px;
+    color: white;
+    flex-wrap: wrap;
