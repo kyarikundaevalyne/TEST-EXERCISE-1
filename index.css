@@ -1,10 +1,151 @@
+
+  
+
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+html{
+    font-size: 100%;
+}
+
+.hero-container{
+    position: relative;
+    color:goldenrod
+}
+.hero-image img{
+    background:url('../Downloads/background image.jpg') ;
+    width: 300px;
+    border: 0;
+    border-radius: 2px;
+    gap: 10px;
+}
+    
+    
+    
+
+
+
 .hero {
-    font-family: "Momo Trust Display", sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    background-color: aqua;
+    background-color: peru;
+    padding: 50px;
+    color :black;
+    flex-wrap: wrap;
+}
+
+.hero-text{
+    display:flex;
+     background-color:white;
+     padding: auto;
+     margin: left 20px;
+     align-items: center;
+     justify-content: center;
+
+}
+
+
+
+.hero-h1{
+    font-size: medium;
+    margin-left:20px;
+    padding: 10px;
+    align-items: center;
+
+}
+
+body {
+  font-family: 'Elms Sans', sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.services{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color:blueviolet;
     padding: 50px;
     color: white;
     flex-wrap: wrap;
+}
+
+.services h2 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  width: 220px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+
+.service i 
+{display: flex;
+  font-size: 38px;
+  color: burlywood;
+  margin-bottom: auto;
+  align-items: center;
+  justify-content:center;
+
+  
+}
+
+
+.service p {
+  display: flex;
+  font-size: 17px;
+  font-weight: 500;
+  color:black;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    background-color: #e8ecf5;
+    padding: 30px;
+  }
+
+  .service {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .services h2 {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
