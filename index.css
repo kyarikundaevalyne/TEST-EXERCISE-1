@@ -1,62 +1,86 @@
-
-  
-
-
-body{
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-}
-html{
-    font-size: 100%;
-}
-
-.hero-container{
-    position: relative;
-    color:goldenrod
-}
-.hero-image img{
-    background:url('../Downloads/background image.jpg') ;
-    width: 300px;
-    border: 0;
-    border-radius: 2px;
-    gap: 10px;
-}
-    
-    
-    
-
-
-
-.hero {
-    font-family: "Montserrat", sans-serif;
+.navbar {
+    width: 100%;
+    padding: 0;
+    gap:20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    background-color: peru;
-    padding: 50px;
-    color :black;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
 }
 
-.hero-text{
-    display:flex;
-     background-color:white;
-     padding: auto;
-     margin: left 20px;
-     align-items: center;
-     justify-content: center;
-
-}
-
-
-
-.hero-h1{
-    font-size: medium;
-    margin-left:20px;
-    padding: 10px;
+.logo {
+    display: flex;
     align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
 
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+
+  body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    gap: 40px;
+    background: white;
+}
+
+
+.hero-image {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.hero-content {
+    width: 45%;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 body {
@@ -67,11 +91,11 @@ body {
 }
 
 .services{
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
-    background-color:blueviolet;
+    background-color :chocolate;
     padding: 50px;
     color: white;
     flex-wrap: wrap;
@@ -119,26 +143,31 @@ body {
   display: flex;
   font-size: 17px;
   font-weight: 500;
+  justify-content: space-between;
   color:black;
-  text-decoration: none;
+  text-align: left;
+  
 }
 
-@media (max-width: 768px) {
-  .services-container {
-    flex-direction: column;
-    background-color: #e8ecf5;
-    padding: 30px;
-  }
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
 
-  .service {
-    width: 100%;
-    max-width: 300px;
-  }
+    .hero-image,
+    .hero-content {
+        width: 100%;
+    }
 
-  .services h2 {
-    font-size: 24px;
-  }
+    .hero-image img {
+        width: 100%;
+    }
 }
+}
+
+
 
 
 
